@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "24302537399",
+    "firebase_url": "https://pamc-5cc45-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pamc-5cc45",
+    "storage_bucket": "pamc-5cc45.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24302537399:android:b7eeb9f5197dfbdf559b32",
+        "android_client_info": {
+          "package_name": "air.mobile.calcount"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCztErXCAFm1fhr11DSr9GCBgfGYJm0W9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

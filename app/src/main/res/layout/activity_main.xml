@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5EDED"
+    tools:context=".addActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:text="Menu Makanan"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/targetCaloriesFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- FrameLayout for Sarapan Section -->
+    <FrameLayout
+        android:id="@+id/targetCaloriesFrame"
+        android:layout_width="363dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+        <TextView
+            android:id="@+id/caloriesEatenLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            android:text="Calories Eaten"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/etStatus"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:hint="Tambahkan Makanan"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/sarapanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="110dp"
+            android:backgroundTint="#6482AD"
+            android:text="Tambah"
+            android:textColor="#FFFFFF" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sarapanButtonFrame"
+        android:layout_width="351dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/targetCaloriesFrame">
+
+        <TextView
+            android:id="@+id/sarapanTextViewCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="15dp"
+            android:text="0.0 / 265" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/dadaayam" />
+
+        <TextView
+            android:id="@+id/sarapanTextViewInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="100dp"
+            android:text="100 kkal | 100 gram"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/sarapanTextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="80dp"
+            android:text="Gudeg" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="134dp"
+            android:layout_height="42dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="120dp"
+            android:hint="Masukkan Berat"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="155dp"
+            android:backgroundTint="#6482AD"
+            android:text="Ok" />
+
+
+    </FrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sarapanRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sarapanButtonFrame" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
